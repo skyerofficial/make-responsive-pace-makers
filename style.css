@@ -56,7 +56,7 @@ img{
 
 
 .grid{
-    width: 875px;
+    width:70vw;
     margin: auto;
     margin-top: 5px;
     line-height: 0;
@@ -68,6 +68,26 @@ img{
     column-gap: 10px;
 }
 
+@media screen and (max-width:991px){
+
+   .grid{
+        width:85vw;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    .grid{
+    width:90vw;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    
+}
+}
 .grid img{
     max-width: none;
     width: 100% !important;
